@@ -3,4 +3,4 @@
 Release changes to GoogleCustomSearch.
 
 
-== 0.1.0 (2010 Sep 14)
+== 0.1.1 (2010 Sep 14)
