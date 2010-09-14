@@ -1,0 +1,56 @@
+= Google Custom Search
+
+This project is a Ruby API to Google's Custom Search Engine (http://www.google.com/cse).
+This plugin is rewrite plugin from Alex Reisner (http://github.com/alexreisner/google_custom_search.git), 
+because the old plugin not working.
+
+== 1. Install
+
+Install either as a Rails plugin:
+
+  rails plugin install git://github.com/vodafon/google_cse.git
+
+or as a gem:
+
+  # add to Gemfile:
+  gem "google_cse", :source => "http://gemcutter.org/"
+  
+  # at command prompt:
+  bundle install
+
+or as a standalone gem (outside of Rails):
+
+  sudo gem install google_cse --source http://gemcutter.org
+
+
+== 2. Configure
+
+You *must* define a constant in your application called <tt>CX_GOOGLE_CSE</tt>. For example, if you're using Rails, create a file <tt>config/initializers/google_cse.rb</tt>:
+
+ CX_GOOGLE_CSE = "..."
+
+You can find the CX value for your custom search engine via the search control panel on Google's site (click the "Get code" link and you'll see a hidden "cx" field in the sample HTML form).
+
+== 3. Use
+
+To perform a search:
+
+  results = GoogleCustomSearch.search("Hank Aaron", 0)
+
+The second parameter is a start parameter for search query. 0 - first page (1-10 result), 10 - second page, etc.
+  
+The +results+ variable is now a GoogleCustomSearch::ResultSet object:
+  
+  results.pages            # array of pages data
+  results.results          # array of result objects
+
+Iterate through the results:
+
+  results.results.each do |result|
+    result.title           # result title
+    result.url             # result URL
+    result.description     # excerpt, with terms highlighted
+  end
+
+
+Copyright (c) 2010 Igor Vodafon, released under the MIT license

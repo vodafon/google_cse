@@ -1,0 +1,6 @@
+= Changelog
+
+Release changes to GoogleCustomSearch.
+
+
+== 0.1 (2010 Sep 14)
