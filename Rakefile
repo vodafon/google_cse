@@ -7,7 +7,7 @@ begin
     gem.name        = "google_cse"
     gem.summary     = %Q{Ruby API to Google Custom Search Engine.}
     gem.description = %Q{Ruby API to Google Custom Search Engine. Works with the paid version of CSE where you get results in XML format.}
-    gem.email       = "alex@alexreisner.com"
+    gem.email       = "vodafon.ua@gmail.com"
     gem.homepage    = "http://github.com/vodafon/google_cse"
     gem.authors     = ["Igor Vodafon"]
   end

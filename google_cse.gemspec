@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.authors = ["Igor Vodafon"]
   s.date = %q{2010-09-14}
   s.description = %q{Ruby API to Google Custom Search Engine. Works with the paid version of CSE where you get results in XML format.}
-  s.email = %q{alex@alexreisner.com}
+  s.email = %q{vodafon.ua@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
      "README.rdoc"

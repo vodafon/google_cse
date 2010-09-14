@@ -13,14 +13,14 @@ Install either as a Rails plugin:
 or as a gem:
 
   # add to Gemfile:
-  gem "google_cse", :source => "http://gemcutter.org/"
+  gem "google_cse"
   
   # at command prompt:
   bundle install
 
 or as a standalone gem (outside of Rails):
 
-  sudo gem install google_cse --source http://gemcutter.org
+  sudo gem install google_cse
 
 
 == 2. Configure
