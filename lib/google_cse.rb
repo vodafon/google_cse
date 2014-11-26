@@ -23,7 +23,7 @@ module GoogleCustomSearch
     # Get and parse results.
     url = url(query, start)
     json = fetch_json(url)
-    data = Crack::JSON.parse(json)
+    data = JSON.parse(json)
 
     # Extract and return pages data and search result data.
     if data['responseData']
